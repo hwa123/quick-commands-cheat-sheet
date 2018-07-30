@@ -7,3 +7,4 @@ git branch -m old-name new-name | Rename your local branch when on a different b
 git push origin :old-name new-name | Delete the old-name remote branch and push the new-name local branch
 git push --delete origin tag-name | Remove remote tag
 git tag -d tag-name | Remove local tag
+git fetch origin && git rebase origin/master | Rebase local branch with remote master
