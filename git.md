@@ -8,3 +8,4 @@ git push origin :old-name new-name | Delete the old-name remote branch and push 
 git push --delete origin tag-name | Remove remote tag
 git tag -d tag-name | Remove local tag
 git fetch origin && git rebase origin/master | Rebase local branch with remote master
+git commit --amend | Edit commit message if needed
