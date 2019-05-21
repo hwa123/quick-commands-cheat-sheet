@@ -9,3 +9,4 @@ git push --delete origin tag-name | Remove remote tag
 git tag -d tag-name | Remove local tag
 git fetch origin && git rebase origin/master | Rebase local branch with remote master
 git commit --amend | Edit commit message if needed
+git branch --track branch-name remote-git/branch | use local branch to track remote git branch
