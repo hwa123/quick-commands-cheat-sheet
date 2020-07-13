@@ -11,9 +11,9 @@ git fetch origin && git rebase origin/master | Rebase local branch with remote m
 git commit --amend | Edit commit message if needed
 git branch --track branch-name remote-git/branch | use local branch to track remote git branch
 git merge origin/master --allow-unreleted-histories | force unrelated histories branches to merge
-git rebase -i `<earlier-commit-sha>` | interactive rebase off of a point earlier in the history than the commit you need to modify. In the list of commits being rebased, change the text from `pick` to `edit` next to the hash of the one you want to modify, then save and quit. To change the 1st commit message, use `git rebase -i --root`
+git rebase -i `<earlier-commit-sha>` | interactive rebase off of a point earlier in the history than the commit you need to modify. In the list of commits being rebased, change the text from `pick` to `edit` next to the hash of the one you want to modify, then save and quit. To modify the very 1st commit, use `git rebase -i --root`
 git rebase --continue | continue rebase to the next commit which marked as `edit` in previous step, the next nearest commit following chronological order
-git commit --amend --reset-author --no-edit | remove committer info from commit message
+git commit --amend --reset-author --no-edit | remove author/committer info from commit message in no-editor mode
 gut push -f | push changes to remote git branch in fast-forwarding fashion
 
 
